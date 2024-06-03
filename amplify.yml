@@ -9,6 +9,8 @@ frontend:
   phases:
     build:
       commands:
+        - echo "FIRST_NAME"="Mario" >> .env
+        - echo "LAST_NAME"="Talavera" >> .env
         - npm run build
   artifacts:
     baseDirectory: dist
